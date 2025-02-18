@@ -25,34 +25,34 @@ public class Assignment1 {
     System.out.println("\t T T T T \t" + "\t    S S S S S S S S");
 
     //Question 2: Ask user for number in fahrenheit and convert the number to Celsius
-    Scanner scan = new Scanner(System.in);
+    Scanner scan = new Scanner(System.in); //creates a scanner
 
-    System.out.print("Please enter a number in Fahrenheit: ");
+    System.out.print("Please enter a number in Fahrenheit: "); //print a prompt to the user
 
-    double fahrenheit = scan.nextDouble();
+    double fahrenheit = scan.nextDouble(); //scans the terminal for double input
 
-    double conversionFactor = 5.0 / 9.0;
+    double conversionFactor = 5.0 / 9.0;  //creates a variable containing conversion factor
  
-    double celsius = (conversionFactor * (fahrenheit - 32));
+    double celsius = (conversionFactor * (fahrenheit - 32)); //carries out arithmetic operations to covert the given temperature
 
 
     //Question 3: take a 5 charcter string and delete first and last character and save the reverse.
-    System.out.print("PLease enter 5 letters: ");
+    System.out.print("PLease enter 5 letters: "); //prints a prompt to the user
 
-    String word = scan.next();
+    String word = scan.next(); //scans the terminal for string input
 
-    String middle = word.substring(2, 3);
+    String middle = word.substring(2, 3); //shortens the given word
 
-    char letterOne = word.charAt(1);
+    char letterOne = word.charAt(1); //saves a character at index 1 as a variable
 
-    char letterTwo = word.charAt(3);
+    char letterTwo = word.charAt(3); //saves a character at index 3 as a variable
 
-    scan.close();
+    scan.close(); //closes the scanner
 
     //Question 4: generate and save a random number between 32 to 16384 inclusive
-    Random generator = new Random();
+    Random generator = new Random(); //creates a random generator
 
-    int randomNum = generator.nextInt((16385-32))+32;
+    int randomNum = generator.nextInt((16385 - 32)) + 32; //the generator picks a randomnumber between 32 and 16384
 
     //Problem 5: print all the results of question 2-4 separating each by a new line
     System.out.println(fahrenheit + " degrees Fahrenheit in Celsius is: " + celsius + " degrees Celsius");
